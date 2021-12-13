@@ -1,0 +1,17 @@
+:root {
+  --studio-color: #2196f3;
+  --second-studio-color: #212121;
+  --third-studio-color: #757575;
+  --main-background-color: #ffffff;
+  --first-logo-color: #ffffff;
+  --second-logo-color: #000000;
+  --main-heading-color: #ffffff;
+  --active-text-color: #ffffff;
+  --second-background-color: #f5f4fa;
+  --third-background-color: #2f303a;
+  --footer-contacts-color: rgba(255, 255, 255, 0.6);
+  --border-color: #ececec;
+  --portfolio-border-color: #eeeeee;
+  --animation-speed: 250ms;
+  --animation-cubic: var(--animation-speed) cubic-bezier(0.4, 0, 0.2, 1);
+}/*# sourceMappingURL=main.css.map */
