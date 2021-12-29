@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --studio-color: #2196f3;
   --second-studio-color: #212121;
   --third-studio-color: #757575;
@@ -22,9 +22,10 @@
   --box-shadow-fifth: rgba(0, 0, 0, 0.08);
   --inactive-icon-color: #afb1b8;
   --border-input-color: rgba(33, 33, 33, 0.2);
-}
+  --main-font: Roboto;
+} */
 
-.container {
+/* .container {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
@@ -62,7 +63,7 @@
 }
 
 .btn {
-  font-family: Roboto;
+  font-family: var(--main-font);
   font-style: normal;
   font-size: 16px;
   cursor: pointer;
@@ -99,11 +100,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 
 /* HEADER */
 
-.header {
+/* .header {
   border: 1px solid var(--border-color);
   height: 80px;
 }
@@ -218,11 +219,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 
 /* HERO */
 
-.hero__heading {
+/* .hero__heading {
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
@@ -247,7 +248,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
+} */
 
 /* FEATURES */
 
@@ -732,7 +733,7 @@
 
 .project-list__cart-text {
   position: absolute;
-  font-family: Roboto;
+  font-family: var(--main-font);
   font-size: 18px;
   line-height: 1.55;
   letter-spacing: 0.03em;
