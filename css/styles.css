@@ -431,7 +431,7 @@
 
 /* CLIENTS */
 
-.clients-list {
+/* .clients-list {
   display: flex;
   justify-content: center;
 }
@@ -464,7 +464,7 @@
 
 .clients-list__icon {
   fill: currentColor;
-}
+} */
 
 /* FOOTER */
 /* .footer__logo {

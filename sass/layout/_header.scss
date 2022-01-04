@@ -1,5 +1,5 @@
 .header {
-  border: 1px solid var(--border-color);
+  border: 1px solid $border-color;
   height: 80px;
 }
 
@@ -7,10 +7,6 @@
   margin-right: 93px;
   padding-bottom: 24px;
   padding-top: 24px;
-}
-
-.logo--black {
-  color: var(--second-logo-color);
 }
 
 .header__container {
@@ -33,16 +29,16 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  color: var(--second-studio-color);
+  color: $second-studio-color;
   padding-bottom: 32px;
   padding-top: 32px;
   display: flex;
-  transition: color var(--animation-cubic);
+  transition: color $animation-cubic;
 }
 
 .nav-list__link:hover,
 .nav-list__link:focus {
-  color: var(--studio-color);
+  color: $studio-color;
 }
 
 .contacts {
@@ -51,7 +47,7 @@
 }
 
 .nav-list__link--current {
-  color: var(--studio-color);
+  color: $studio-color;
   position: relative;
 }
 
@@ -60,7 +56,7 @@
   width: 100%;
   height: 4px;
   border-radius: 2px;
-  background-color: var(--studio-color);
+  background-color: $studio-color;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -87,18 +83,18 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--third-studio-color);
+  color: $third-studio-color;
   padding-bottom: 32px;
   padding-top: 32px;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: color var(--animation-cubic);
+  transition: color $animation-cubic;
 }
 
 .contacts__link:hover,
 .contacts__link:focus {
-  color: var(--studio-color);
+  color: $studio-color;
 }
 
 .contacts__icon {

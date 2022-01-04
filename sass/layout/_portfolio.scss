@@ -8,18 +8,17 @@
 }
 
 .filter-list__btn {
-  background-color: var(--second-background-color);
+  background-color: $second-background-color;
   font-weight: 500;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--second-studio-color);
+  color: $second-studio-color;
   padding: 6px 22px;
   height: 38px;
   min-width: 73px;
   box-shadow: none;
-  transition: color var(--animation-cubic), background-color var(--animation-cubic),
-    box-shadow var(--animation-cubic);
+  transition: color $animation-cubic, background-color $animation-cubic, box-shadow $animation-cubic;
 }
 
 .filter-list__item {
@@ -33,16 +32,16 @@
 .filter-list__btn:hover,
 .filter-list__btn:focus,
 .filter-list__btn:active {
-  color: var(--active-text-color);
-  background-color: var(--studio-color);
-  box-shadow: 0px 3px 1px var(--box-shadow-fourth), 0px 1px 2px var(--box-shadow-fifth),
-    0px 2px 2px var(--box-shadow-third);
+  color: $primary-color;
+  background-color: $studio-color;
+  box-shadow: 0px 3px 1px $box-shadow-fourth, 0px 1px 2px $box-shadow-fifth,
+    0px 2px 2px $box-shadow-third;
 }
 .filter-list__btn.current {
-  color: var(--active-text-color);
-  background: var(--studio-color);
-  box-shadow: 0px 3px 1px var(--box-shadow-fourth), 0px 1px 2px var(--box-shadow-fifth),
-    0px 2px 2px var(--box-shadow-third);
+  color: $primary-color;
+  background: $studio-color;
+  box-shadow: 0px 3px 1px $box-shadow-fourth, 0px 1px 2px $box-shadow-fifth,
+    0px 2px 2px $box-shadow-third;
 }
 
 .project-list {
@@ -64,7 +63,7 @@
 }
 
 .project-list__cart-bottom {
-  border: 1px solid var(--portfolio-border-color);
+  border: 1px solid $portfolio-border-color;
   border-top: 0;
   padding: 20px 24px;
 }
@@ -74,7 +73,7 @@
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--second-studio-color);
+  color: $second-studio-color;
   margin-bottom: 4px;
 }
 
@@ -83,18 +82,18 @@
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-  color: var(--third-studio-color);
+  color: $third-studio-color;
 }
 
 .project-list__link {
   display: block;
   box-shadow: none;
-  transition: box-shadow var(--animation-cubic);
+  transition: box-shadow $animation-cubic;
 }
 
 .project-list__link:hover,
 .project-list__link:focus {
-  box-shadow: 0px 1px 1px var(--box-shadow-third), 0px 4px 4px rgba(0, 0, 0, 0.06),
+  box-shadow: 0px 1px 1px $box-shadow-third, 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -105,11 +104,11 @@
 
 .project-list__cart-text {
   position: absolute;
-  font-family: var(--main-font);
+  font-family: $main-font;
   font-size: 18px;
   line-height: 1.55;
   letter-spacing: 0.03em;
-  color: var(--main-heading-color);
+  color: $primary-color;
   background-color: rgba(33, 150, 243, 0.9);
   padding: 63px 24px;
   left: 0;
@@ -117,7 +116,7 @@
   width: 100%;
   height: 100%;
   transform: translateY(101%);
-  transition: transform var(--animation-cubic);
+  transition: transform $animation-cubic;
 }
 
 .project-list__link:hover .project-list__cart-text,
