@@ -1,0 +1,34 @@
+.clients-list {
+  display: flex;
+  justify-content: center;
+}
+
+.clients-list__item {
+  width: 170px;
+  height: 92px;
+}
+.clients-list__item:nth-child(-n + 5) {
+  margin-right: 30px;
+}
+
+.clients-list__link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  border: 1px solid var(--inactive-icon-color);
+  color: var(--inactive-icon-color);
+  transition: border var(--animation-cubic), color var(--animation-cubic);
+}
+
+.clients-list__link:hover,
+.clients-list__link:focus {
+  color: var(--studio-color);
+  border: 1px solid var(--studio-color);
+}
+
+.clients-list__icon {
+  fill: currentColor;
+}

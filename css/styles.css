@@ -252,7 +252,7 @@
 
 /* FEATURES */
 
-.features-list__heading {
+/* .features-list__heading {
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -292,11 +292,11 @@
 
 .features-list {
   display: flex;
-}
+} */
 
 /* OUR WORCKS */
 
-.our-worcks__main-heading {
+/* .our-worcks__main-heading {
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -342,10 +342,10 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-heading-color);
-}
+} */
 
 /* OUR TEAM */
-.team {
+/* .team {
   background-color: var(--second-background-color);
 }
 
@@ -427,7 +427,9 @@
 
 .team-list__item:last-child {
   margin-right: 0px;
-}
+} */
+
+/* CLIENTS */
 
 .clients-list {
   display: flex;
@@ -465,7 +467,7 @@
 }
 
 /* FOOTER */
-.footer__logo {
+/* .footer__logo {
   display: flex;
   margin-bottom: 20px;
 }
@@ -621,11 +623,11 @@
   padding: 10px 29px;
   width: 200px;
   height: 50px;
-}
+} */
 
 /* PORTFOLIO */
 
-.filter-list {
+/* .filter-list {
   display: flex;
   justify-content: center;
 }
@@ -670,10 +672,10 @@
   background: var(--studio-color);
   box-shadow: 0px 3px 1px var(--box-shadow-fourth), 0px 1px 2px var(--box-shadow-fifth),
     0px 2px 2px var(--box-shadow-third);
-}
+} */
 
 /* PORTFOLIO-PROJECT */
-.project-list {
+/* .project-list {
   display: flex;
   flex-wrap: wrap;
 }
@@ -751,11 +753,11 @@
 .project-list__link:hover .project-list__cart-text,
 .project-list__link:focus .project-list__cart-text {
   transform: translateY(0);
-}
+} */
 
 /* MODAL */
 
-.backdrop {
+/* .backdrop {
   width: 100vw;
   height: 100vh;
   background-color: #00000033;
@@ -949,4 +951,4 @@
 .modal-form__field-link {
   color: var(--studio-color);
   text-decoration-skip-ink: none;
-}
+} */
