@@ -55,11 +55,8 @@
     }
   }
   &__title {
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 1.15;
+    @include font($fw: bold, $fz: 20px, $lh: 1.15);
     text-align: center;
-    letter-spacing: 0.03em;
     color: $second-studio-color;
     margin-bottom: 12px;
   }
@@ -67,11 +64,8 @@
 
 .modal-form {
   &__lable {
+    @include font($fz: 12px, $ls: 0.01em);
     display: block;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.01em;
     color: $third-studio-color;
     margin-bottom: 4px;
   }
@@ -107,11 +101,8 @@
     }
   }
   &__textarea {
+    @include font($ls: 0.01em);
     display: block;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.01em;
     color: $second-logo-color;
     width: 100%;
     height: 120px;
@@ -127,11 +118,8 @@
       border: 1px solid $studio-color;
     }
     &::placeholder {
-      font-weight: normal;
-      font-size: 14px;
-      line-height: 1.14;
-      letter-spacing: 0.01em;
-      color: rgba(117, 117, 117, 0.5);
+      @include font($ls: 0.01em);
+      color: $placeholder-color;
     }
   }
   &__field {
@@ -147,11 +135,8 @@
     }
   }
   &__check-text {
+    @include font($lh: 1.71);
     display: flex;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
     color: $third-studio-color;
     align-items: center;
     &::before {
@@ -165,7 +150,8 @@
       transition: border-color $animation-cubic;
       cursor: pointer;
     }
-    &:hover::before {
+    &:hover::before,
+    &:focus::before {
       border: 2px solid $studio-color;
     }
   }

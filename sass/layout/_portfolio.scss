@@ -5,34 +5,6 @@
 .filter-list {
   display: flex;
   justify-content: center;
-  &__btn {
-    background-color: $second-background-color;
-    font-weight: 500;
-    line-height: 1.62;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: $second-studio-color;
-    padding: 6px 22px;
-    height: 38px;
-    min-width: 73px;
-    box-shadow: none;
-    transition: color $animation-cubic, background-color $animation-cubic,
-      box-shadow $animation-cubic;
-    &:hover,
-    &:focus,
-    &:active {
-      color: $primary-color;
-      background-color: $studio-color;
-      box-shadow: 0px 3px 1px $box-shadow-fourth, 0px 1px 2px $box-shadow-fifth,
-        0px 2px 2px $box-shadow-third;
-    }
-    &.current {
-      color: $primary-color;
-      background: $studio-color;
-      box-shadow: 0px 3px 1px $box-shadow-fourth, 0px 1px 2px $box-shadow-fifth,
-        0px 2px 2px $box-shadow-third;
-    }
-  }
   &__item {
     margin-right: 8px;
     &:last-child {
@@ -59,19 +31,9 @@
     border-top: 0;
     padding: 20px 24px;
   }
-  &__title {
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-    color: $second-studio-color;
-    margin-bottom: 4px;
-  }
+
   &__text {
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.03em;
+    @include font($fz: 16px, $lh: 1.87);
     color: $third-studio-color;
   }
   &__link {
@@ -80,8 +42,8 @@
     transition: box-shadow $animation-cubic;
     &:hover,
     &:focus {
-      box-shadow: 0px 1px 1px $box-shadow-third, 0px 4px 4px rgba(0, 0, 0, 0.06),
-        1px 4px 6px rgba(0, 0, 0, 0.16);
+      box-shadow: 0px 1px 1px $box-shadow-third, 0px 4px 4px $box-shadow-sixth,
+        1px 4px 6px $box-shadow-seventh;
     }
     &:hover .project-list__cart-text,
     &:focus .project-list__cart-text {
@@ -93,13 +55,11 @@
     overflow: hidden;
   }
   &__cart-text {
+    @include font($fz: 18px, $lh: 1.55);
     position: absolute;
     font-family: $main-font;
-    font-size: 18px;
-    line-height: 1.55;
-    letter-spacing: 0.03em;
     color: $primary-color;
-    background-color: rgba(33, 150, 243, 0.9);
+    background-color: $transperent-studio-color;
     padding: 63px 24px;
     left: 0;
     top: 0;

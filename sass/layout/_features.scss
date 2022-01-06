@@ -1,20 +1,7 @@
 .features-list {
   display: flex;
-  &__heading {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: $second-studio-color;
-    margin-bottom: 10px;
-    height: 16px;
-  }
   &__text {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+    @include font($lh: 1.71);
     height: 75px;
   }
   &__item {

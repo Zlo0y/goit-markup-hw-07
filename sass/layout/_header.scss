@@ -1,16 +1,6 @@
 .header {
   border: 1px solid $border-color;
   height: 80px;
-  &__logo {
-    margin-right: 93px;
-    padding-bottom: 24px;
-    padding-top: 24px;
-  }
-  &__container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
 }
 
 .navigation {
@@ -22,9 +12,7 @@
   display: flex;
   justify-content: center;
   &__link {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    @include font($fw: 500, $ls: 0.02em);
     color: $second-studio-color;
     padding-bottom: 32px;
     padding-top: 32px;
@@ -67,10 +55,7 @@
     }
   }
   &__link {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+    @include font($fw: 500, $ls: 0.02em);
     color: $third-studio-color;
     padding-bottom: 32px;
     padding-top: 32px;

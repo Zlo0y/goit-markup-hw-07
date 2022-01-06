@@ -1,32 +1,18 @@
 .footer {
   background-color: $third-background-color;
   padding: 60px 0 60px 0;
-  &__logo {
-    display: flex;
-    margin-bottom: 20px;
-  }
-  &__container {
-    display: flex;
-    align-items: baseline;
-  }
 }
 
 .footer-list {
   &__adress {
+    @include font($lh: 1.7);
     font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
     color: $primary-color;
     margin-bottom: 10px;
   }
   &__link {
     font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
+    @include font($lh: 1.7);
     color: $footer-contacts-color;
     transition: color $animation-cubic;
     &:hover,
@@ -47,38 +33,12 @@
 }
 
 .footer-social-container__text {
+  @include font($fw: bold);
   display: flex;
   font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $primary-color;
   margin-bottom: 20px;
-}
-
-.footer-social-list {
-  display: flex;
-  justify-content: center;
-  &__item {
-    width: 44px;
-    height: 44px;
-    &:nth-child(-n + 3) {
-      margin-right: 10px;
-    }
-  }
-  &__link {
-    background-color: #ffffff1a;
-    transition: background-color $animation-cubic;
-    &:hover,
-    &:focus {
-      background-color: $studio-color;
-    }
-  }
-  &__icon {
-    fill: $primary-color;
-  }
 }
 
 .mailing-container {
@@ -86,11 +46,8 @@
   height: 86px;
   margin: 0 0 0 auto;
   &__text {
+    @include font($fw: bold);
     font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $primary-color;
     margin-bottom: 20px;
@@ -102,39 +59,18 @@
   justify-content: center;
   align-items: center;
   &__input {
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.03em;
+    @include font($fz: 16px, $lh: 1.25);
     color: $primary-color;
     width: 358px;
     height: 50px;
     border-radius: 4px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid $mailing-border-color;
     padding: 15px 16px;
     background-color: $third-background-color;
     margin-right: 12px;
     &::placeholder {
-      font-weight: normal;
-      font-size: 16px;
-      line-height: 1.25;
-      letter-spacing: 0.03em;
+      @include font($fz: 16px, $lh: 1.25);
       color: $footer-contacts-color;
     }
-  }
-  &__btn {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: $studio-color;
-    box-shadow: 0px 4px 4px $shadow-color;
-    font-weight: bold;
-    line-height: 1.87;
-    letter-spacing: 0.06em;
-    text-align: left;
-    color: $primary-color;
-    padding: 10px 29px;
-    width: 200px;
-    height: 50px;
   }
 }
